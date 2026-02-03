@@ -1,0 +1,23 @@
+main {
+    background-color: rgb(133, 227, 133);
+    flex: 1;
+    /* color: #fff; */
+    /* font-size: 100px; */
+    text-align: center;
+    align-content: center;
+    padding:20px 0
+}
+
+.tech-list{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    gap: 20px;
+}
+.tech-list li{
+    padding: 20px;
+    background-color: aliceblue;
+}
+.tech-list img{
+    width: 50px;
+}

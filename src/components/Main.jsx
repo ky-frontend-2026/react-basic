@@ -1,28 +1,47 @@
 import React from 'react'
-
+import "./style/Main.css"
+import image from '../assets/3.jpg'
+import htmlIcon from "../assets/html.png";
+import cssIcon from "../assets/css.png";
+import jsIcon from "../assets/js.png";
 const Main = () => {
-    const name ='Alice'
-    const age = 23
-
-    const numbers =[10,20,30,40]
-    const obj ={
-        city:'seoul',
-        hobby:'programing'
-    }
-    const isLoggin=false
+    const techList = [
+        {
+            id: 1,
+            title: "HTML",
+            desc: "웹 구조를 만드는 마크업 언어",
+            icon: htmlIcon,
+        },
+        {
+            id: 2,
+            title: "CSS",
+            desc: "화면을 꾸미는 스타일 언어",
+            icon: cssIcon,
+        },
+        {
+            id: 3,
+            title: "JavaScript",
+            desc: "웹에 동작을 추가하는 언어",
+            icon: jsIcon,
+        },
+    ];
     return (
-        <div>
-            <p>
-                {isLoggin? "로그인 되었습니다":"로그아웃입니다."}
-            </p>
-            <h2>main 입니다</h2>
-            <p>내 이름은 {name}입니다.</p>
-            <p>내 나이는 {age}살 입니다.</p>
-            <p>배열 꺼내서 하나만 넣어보기 {numbers[1]}</p>
-            <p>
-                나는 {obj.city}에서 살고 내 취미 {obj.hobby}는 입니다.
-            </p>
-        </div>
+        <main>
+            <h3>main title</h3>
+            <img src={image} alt="" />
+
+            <ul className="tech-list">
+                {techList.map((tech) => (
+                    <li key={tech.id} className="tech-item">
+                        <img src={tech.icon} alt={tech.title} />
+                        <h4>
+                            <strong>{tech.title}</strong>
+                        </h4>
+                        <p>{tech.desc}</p>
+                    </li>
+                ))}
+            </ul>
+        </main>
     )
 }
 
