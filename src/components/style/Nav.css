@@ -1,8 +1,0 @@
-.nav-list{
-    display: flex;
-    gap: 10px;
-}
-.nav-list li{
-    padding:5px 10px;
-    background-color: aliceblue;
-}
