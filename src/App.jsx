@@ -26,6 +26,8 @@ function App() {
 
         <MenuButton key={menu.id} {...menu} />
       ))}
+    <InputCard  {...InputCard}/>
+    <PostItem/>
     </div>
   )
 }
