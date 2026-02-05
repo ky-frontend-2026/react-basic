@@ -14,7 +14,7 @@ const Counter2 = () => {
 
     const up=()=>{
         countRef.current+=1
-        console.log(`현재의 카운트 ${countRef.current}`)
+        // console.log(`현재의 카운트 ${countRef.current}`)
     }
 
   return (
