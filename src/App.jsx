@@ -11,9 +11,10 @@ const App = () => {
   return (
     <div>
       <h2>useState 연습</h2>
-      <Exam1 {...user}/>
-      <Exam2 />
       <Exam3 />
+      <hr/>
+      <Exam2 />
+      <Exam1 {...user}/>
       <Counter />
     </div>
   )
