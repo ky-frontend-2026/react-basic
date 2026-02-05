@@ -1,8 +1,8 @@
 import React from 'react'
 
-const PostItem = () => {
+const PostItem = ({id,title,author}) => {
   return (
-    <div>PostItem</div>
+    <div>{id}-{title}-{author}</div>
   )
 }
 

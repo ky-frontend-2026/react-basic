@@ -26,8 +26,11 @@ function App() {
 
         <MenuButton key={menu.id} {...menu} />
       ))}
-    <InputCard  {...InputCard}/>
-    <PostItem/>
+      <InputCard  {...inputInfo} />
+      {posts.map((post) => (
+
+        <PostItem key={post.id} {...post} />
+      ))}
     </div>
   )
 }
