@@ -1,11 +1,13 @@
 import React from 'react'
-import Counter from './components/Counter'
-import TodoList from './components/TodoList'
+import MyComponent from './components/MyComponent'
+import Button from './components/Button'
+import Display from './components/Display'
 const App = () => {
   return (
     <div>
-      <TodoList/>
-      <Counter/>
+      <Display/>
+      <Button/>
+      {/* <MyComponent /> */}
     </div>
   )
 }
